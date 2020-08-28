@@ -21,7 +21,7 @@
   ```
   Após a instalação de todos os pacotes, crie um novo conteiner docker (não necessário) e crie um banco de dados com o nome **bhut_cars** (obrigatório). Para que o sistema tenha onde depositar os dados criados, deletados, atualizados etc.<br />
   **Nota**: Não é preciso fazer a instalação nessa respectiva ordem. <br />
-  Depois dos 2 (dois) procedimentos completos, o comando a seguir deve ser rodado pra que cria a tabela no banco de dados.
+  Depois dos 2 (dois) procedimentos completos, o comando a seguir deve ser rodado pra que crie a tabela no banco de dados.
   ```
   yarn sequelize db:migrate
   ```
