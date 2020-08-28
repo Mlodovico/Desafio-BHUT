@@ -1,0 +1,29 @@
+{
+  "name": "desafio-bhut",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "@std/esm": "cjs",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "nodemon -r @std/esm  --experimental-modules",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.4",
+    "sequelize": "^6.3.4",
+    "sequelize-cli": "^6.2.0"
+  },
+  "dependencies": {
+    "@std/esm": "^0.26.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "pg": "^8.3.3",
+    "pg-hstore": "^2.3.3",
+    "uuidv4": "^6.2.3",
+    "yup": "^0.29.3"
+  }
+}
