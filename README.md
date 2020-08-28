@@ -25,4 +25,7 @@
   ```
   yarn sequelize db:migrate
   ```
-  Agora para finalizar, o comando {{yarn dev}} é o suficiente para deixar o sistema em operação.
+  Agora para finalizar, o comando abaixo é o suficiente para deixar o sistema em operação.
+  ```
+  yarn dev
+  ```
