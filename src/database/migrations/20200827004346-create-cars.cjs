@@ -2,7 +2,7 @@
 const DataType = require('sequelize/lib/data-types');
 
 module.exports = {
-  up: async (queryInterface, Sequelize) => {
+  up: (queryInterface, Sequelize) => {
     return queryInterface.createTable('cars', {
       id: {
         type: DataType.UUID,
@@ -45,7 +45,7 @@ module.exports = {
     })
   },
 
-  down: async (queryInterface, Sequelize) => {
+  down: queryInterface => {
     return queryInterface.dropTable('cars');
   }
 };

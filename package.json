@@ -2,11 +2,10 @@
   "name": "desafio-bhut",
   "version": "1.0.0",
   "description": "",
-  "type": "module",
   "@std/esm": "cjs",
   "main": "src/server.js",
   "scripts": {
-    "dev": "nodemon -r @std/esm  --experimental-modules",
+    "dev": "nodemon -r @std/esm --experimental-modules",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -20,6 +19,7 @@
   "dependencies": {
     "@std/esm": "^0.26.0",
     "cors": "^2.8.5",
+    "esm": "^3.2.25",
     "express": "^4.17.1",
     "pg": "^8.3.3",
     "pg-hstore": "^2.3.3",
