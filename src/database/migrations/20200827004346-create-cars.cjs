@@ -1,14 +1,13 @@
 'use strict';
-const DataType = require('sequelize/lib/data-types');
 
 module.exports = {
   up: (queryInterface, Sequelize) => {
     return queryInterface.createTable('cars', {
       id: {
-        type: DataType.UUID,
-        allowNull: false,
+        autoIncrement: true,
         primaryKey: true,
-        default: Sequelize.fn('uuid_generate_v4')
+        allowNull: false,
+        type: Sequelize.INTEGER,
       },
       brand: {
         allowNull: false,
@@ -33,15 +32,7 @@ module.exports = {
       color: {
         allowNull: false,
         type: Sequelize.STRING,
-      },
-      created_at: {
-        type: Sequelize.DATE,
-        allowNull: false,
-      },
-      updated_at: {
-        type: Sequelize.DATE,
-        allowNull: false,
-      },
+      }
     })
   },
 

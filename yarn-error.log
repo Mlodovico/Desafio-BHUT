@@ -14,7 +14,7 @@ Platform:
   linux x64
 
 Trace: 
-  SyntaxError: /home/murilo/Desktop/Desafios/Desafio BHUT/desafio-bhut/package.json: Unexpected token / in JSON at position 93
+  SyntaxError: /home/murilo/Desktop/Desafios/Desafio BHUT/desafio-bhut/package.json: Unexpected token } in JSON at position 193
       at JSON.parse (<anonymous>)
       at /home/murilo/.nvm/versions/node/v12.18.2/lib/node_modules/yarn/lib/cli.js:1625:59
       at Generator.next (<anonymous>)
@@ -26,29 +26,28 @@ npm manifest:
     "name": "desafio-bhut",
     "version": "1.0.0",
     "description": "",
-    "type": "module",
-    //"@std/esm": "cjs",
+    "@std/esm": "cjs",
     "main": "src/server.js",
     "scripts": {
-      "dev": "nodemon --experimental-modules",
-      "test": "echo \"Error: no test specified\" && exit 1"
+      "dev": "nodemon -r @std/esm --experimental-modules",
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "devDependencies": {
-      "nodemon": "^2.0.4",
-      "sequelize": "^6.3.4",
-      "sequelize-cli": "^6.2.0"
+      "nodemon": "^2.0.4"
     },
     "dependencies": {
       "@std/esm": "^0.26.0",
       "cors": "^2.8.5",
+      "esm": "^3.2.25",
       "express": "^4.17.1",
       "pg": "^8.3.3",
       "pg-hstore": "^2.3.3",
       "uuidv4": "^6.2.3",
-      "yup": "^0.29.3"
+      "yup": "^0.29.3",
+      "sequelize": "^6.3.4",
+      "sequelize-cli": "^6.2.0"
     }
   }
 
@@ -565,6 +564,11 @@ Lockfile:
     version "1.0.3"
     resolved "https://registry.yarnpkg.com/escape-html/-/escape-html-1.0.3.tgz#0258eae4d3d0c0974de1c169188ef0051d1d1988"
     integrity sha1-Aljq5NPQwJdN4cFpGI7wBR0dGYg=
+  
+  esm@^3.2.25:
+    version "3.2.25"
+    resolved "https://registry.yarnpkg.com/esm/-/esm-3.2.25.tgz#342c18c29d56157688ba5ce31f8431fbb795cc10"
+    integrity sha512-U1suiZ2oDVWv4zPO56S0NcR5QriEahGtdN2OR6FiOG4WJvcjBVFB0qI4+eKoWFH483PKGuLuu6V8Z4T5g63UVA==
   
   etag@~1.8.1:
     version "1.8.1"

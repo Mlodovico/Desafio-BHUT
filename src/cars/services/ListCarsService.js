@@ -5,7 +5,7 @@ class ListCarsService {
     try {
 
       const listCars = await Cars.findAll({
-        attributes: [ 'id', 'name', 'email', 'avatar_id' ],
+        attributes: [ 'id', 'brand', 'model', 'year', 'price', 'color' ],
       });
 
       return res.status(200).json(listCars);

@@ -5,16 +5,13 @@
   "@std/esm": "cjs",
   "main": "src/server.js",
   "scripts": {
-    "dev": "nodemon -r @std/esm --experimental-modules",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon -r @std/esm --experimental-modules"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "nodemon": "^2.0.4",
-    "sequelize": "^6.3.4",
-    "sequelize-cli": "^6.2.0"
+    "nodemon": "^2.0.4"
   },
   "dependencies": {
     "@std/esm": "^0.26.0",
@@ -24,6 +21,8 @@
     "pg": "^8.3.3",
     "pg-hstore": "^2.3.3",
     "uuidv4": "^6.2.3",
-    "yup": "^0.29.3"
+    "yup": "^0.29.3",
+    "sequelize": "^6.3.4",
+    "sequelize-cli": "^6.2.0"
   }
 }

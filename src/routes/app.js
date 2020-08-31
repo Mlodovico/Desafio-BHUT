@@ -1,6 +1,8 @@
 import express from 'express';
 import cors from 'cors';
 
+import '../database';
+
 import CreateCarsService from '../cars/services/CreateCarsService.js';
 import ListCarsService from '../cars/services/ListCarsService.js';
 import UpdateCarsService from '../cars/services/UpdateCarsService';
